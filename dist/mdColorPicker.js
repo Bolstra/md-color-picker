@@ -150,7 +150,7 @@ function GradientCanvasFactory( ) {
 			//	console.log( "mdColorPickerAlpha Controller", Date.now() - dateClick );
 			}
 		};
-	}
+	};
 
 }
 
@@ -533,7 +533,7 @@ angular.module('mdColorPicker', [])
 				// The only other ngModel changes
 
 				$scope.clearValue = function clearValue() {
-					$scope.value = '';
+					ngModel.$setViewValue('');
 				};
 				$scope.showColorPicker = function showColorPicker($event) {
 					if ( didJustClose ) {
@@ -930,7 +930,8 @@ angular.module('mdColorPicker', [])
 						options: options,
 					},
 					preserveScope: options.preserveScope,
-  					skipHide: options.skipHide,
+					skipHide: options.skipHide,
+					multiple: options.skipHide,
 
 					targetEvent: options.$event,
 					focusOnOpen: options.focusOnOpen,

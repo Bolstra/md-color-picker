@@ -143,7 +143,7 @@ function GradientCanvasFactory( ) {
 			//	console.log( "mdColorPickerAlpha Controller", Date.now() - dateClick );
 			}
 		};
-	}
+	};
 
 }
 
@@ -923,7 +923,8 @@ angular.module('mdColorPicker', [])
 						options: options,
 					},
 					preserveScope: options.preserveScope,
-  					skipHide: options.skipHide,
+					skipHide: options.skipHide,
+					multiple: options.skipHide,
 
 					targetEvent: options.$event,
 					focusOnOpen: options.focusOnOpen,
