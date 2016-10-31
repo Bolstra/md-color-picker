@@ -5,7 +5,7 @@
 	<md-input-container flex>
 		<label><md-icon ng-if="icon">{{icon}}</md-icon>{{label}}</label>
 		<input type="input" ng-model="value" class='md-color-picker-input'
-			ng-required="required" md-no-asterisk="true"
+			ng-required="mdColorRequired" md-no-asterisk="true" name="{{ ::mdColorName }}"
 			ng-mousedown="(openOnInput || !mdColorPreview) && showColorPicker($event)"/>
 	</md-input-container>
 	<md-button class="md-icon-button md-color-picker-clear" ng-if="mdColorClearButton && value" ng-click="clearValue();" aria-label="Clear Color">
