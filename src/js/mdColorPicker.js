@@ -572,6 +572,10 @@ angular.module('mdColorPicker', [])
 				//attrs.value = attrs.value || "#ff0000";
 				attrs.type = attrs.type !== undefined ? attrs.type : 0;
 
+				return function($scope, $element, $attrs, $ctrls) {
+					$scope.pageForm = $ctrls[1];
+				};
+
 			}
 		};
 	}])
