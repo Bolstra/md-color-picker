@@ -430,10 +430,7 @@ angular.module('mdColorPicker', [])
 			templateUrl: "mdColorPicker.tpl.html",
 
 			// Added required controller ngModel
-			require: {
-				ngModel: '^ngModel',
-				pageForm: '^?form'
-			},
+			require: ['^ngModel', '?^form'],
 			transclude: true,
 			scope: {
 				options: '=mdColorPicker',
