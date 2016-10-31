@@ -7,6 +7,7 @@
 		<input type="input" ng-model="value" class='md-color-picker-input'
 			ng-required="mdColorRequired" md-no-asterisk="true" name="{{ ::mdColorName }}"
 			ng-mousedown="(openOnInput || !mdColorPreview) && showColorPicker($event)"/>
+		<div ng-transclude></div>
 	</md-input-container>
 	<md-button class="md-icon-button md-color-picker-clear" ng-if="mdColorClearButton && value" ng-click="clearValue();" aria-label="Clear Color">
 		<md-icon md-svg-icon="clear.svg"></md-icon>
