@@ -461,7 +461,8 @@ angular.module('mdColorPicker', [])
 				mdColorHex: '=?',
 				mdColorRgb: '=?',
 				mdColorHsl: '=?',
-				mdColorDefaultTab: '=?'
+				mdColorDefaultTab: '=?',
+				required: '<'
 			},
 			controller: ['$scope', '$element', '$attrs', '$mdDialog', '$mdColorPicker', function( $scope, $element, $attrs, $mdDialog, $mdColorPicker ) {
 				var didJustClose = false;
