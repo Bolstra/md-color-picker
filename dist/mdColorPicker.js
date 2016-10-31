@@ -479,6 +479,8 @@ angular.module('mdColorPicker', [])
 			controller: ['$scope', '$element', '$attrs', '$mdDialog', '$mdColorPicker', function( $scope, $element, $attrs, $mdDialog, $mdColorPicker ) {
 				var didJustClose = false;
 
+				$scope.pageForm = pageForm;
+
 				// Merge Options Object with scope.  Scope will take precedence much like css vs style attribute.
 				if ( $scope.options !== undefined ) {
 					for ( var opt in $scope.options ) {
