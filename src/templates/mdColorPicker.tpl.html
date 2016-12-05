@@ -6,7 +6,8 @@
 		<label><md-icon ng-if="icon">{{icon}}</md-icon>{{label}}</label>
 		<input type="input" ng-model="value" class='md-color-picker-input'
 			ng-required="mdColorRequired" md-no-asterisk="true" name="{{ ::mdColorName }}"
-			ng-mousedown="(openOnInput || !mdColorPreview) && showColorPicker($event)"/>
+			ng-mousedown="(openOnInput || !mdColorPreview) && showColorPicker($event)"
+			ng-readonly="mdColorReadonly"/>
 			<div ng-messages="pageForm[mdColorName].$error" class="error-messages ng-active">
 				<div ng-message="required">You must supply a value</div>
 				<div ng-transclude class="error-messages md-input-message-animation"></div>
